@@ -1,5 +1,4 @@
 
-
 /* ========================================
 1. Design tokens
 Reusable colors for the entire website
@@ -12,9 +11,10 @@ Reusable colors for the entire website
     --light: #F5F7FA;
 }
 
+
 /* ========================================
 2. Global styles
-Basic rules for the entire page
+Base styles for the entire website
 ======================================== */
 
 * {
@@ -29,6 +29,25 @@ body {
     line-height: 1.6;
 }
 
+/* Typography */
+h1,
+h2,
+h3 {
+    color: var(--dark);
+    line-height: 1.2;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Images */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* ========================================
 3. Responsive foundation
 Prevent horizontal overflow on small screens
@@ -41,19 +60,39 @@ img {
 
 
 /* ========================================
-   4. Header and navigation
+Profile picture
 ======================================== */
 
-header {
+.profile-picture {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* ========================================
+4. Layout container
+Reusable width and alignment
+======================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+/* ========================================
+5. Header and navigation
+======================================== */
+
+.header {
     background-color: var(--white);
     border-bottom: 1px solid #E0E5EC;
 }
 
 .navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 1.5rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +108,6 @@ header {
     color: var(--dark);
     text-decoration: none;
 }
-
 
 /* Logo icon */
 .logo-icon {
@@ -106,3 +144,90 @@ header {
 }
 
 
+/* ========================================
+6. Main layout
+Desktop: two columns
+======================================== */
+
+.page-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+    min-width: 0;
+}
+
+.main-content,
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    min-width: 0;
+}
+
+
+/* ========================================
+7. Content sections
+Consistent card layout
+======================================== */
+
+.main-content,
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-content section,
+.sidebar section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+
+/* ========================================
+8. Hero layout
+Text and profile picture
+======================================== */
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ========================================
+10. Responsive design
+======================================== */
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+    .page-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
