@@ -40,7 +40,7 @@ The goal is to build an accessible, well-structured website using semantic HTML 
 
 ## Design Concept
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 The portfolio uses a two-column layout on desktop screens:
 
@@ -92,7 +92,7 @@ my-it-portfolio/
 └── README.md
 ```
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 The structure may evolve as the project develops.
 
