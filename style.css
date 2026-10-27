@@ -1,7 +1,108 @@
 
+
+/* ========================================
+1. Design tokens
+Reusable colors for the entire website
+======================================== */
+
 :root {
     --dark: #14253D;
     --blue: #2457A7;
     --white: #FFFFFF;
     --light: #F5F7FA;
 }
+
+/* ========================================
+2. Global styles
+Basic rules for the entire page
+======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark);
+    background-color: var(--light);
+    line-height: 1.6;
+}
+
+/* ========================================
+3. Responsive foundation
+Prevent horizontal overflow on small screens
+======================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ========================================
+   4. Header and navigation
+======================================== */
+
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid #E0E5EC;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.logo a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+
+/* Logo icon */
+.logo-icon {
+    color: var(--blue);
+    font-family: monospace;
+    font-weight: 700;
+    margin-right: 0.35rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: var(--blue);
+}
+
+.nav-links a:focus-visible,
+.logo a:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 4px;
+}
+
+

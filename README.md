@@ -25,10 +25,19 @@ Här nedan ser du vad som ska finnas med i din portfolio. Sedan hur du implement
 - **Kontaktuppgifter** till dig
 - En **sidfot**
 
+## deployment
+
+```text
+ - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          # The default branch is used to determine the publishing source
+          enablement: true
+```
+
 [(https://cameloasa.github.io/DreamyLines/)]
 [https://cameloasa.github.io/Recipe/]
 [https://cameloasa.github.io/IT-Portofolio/]
-
 
 # My IT Portfolio
 
@@ -40,7 +49,7 @@ The goal is to build an accessible, well-structured website using semantic HTML 
 
 ## Design Concept
 
-![alt text](images/image-1.png)
+![alt text](/images/design.png)
 
 The portfolio uses a two-column layout on desktop screens:
 
@@ -92,7 +101,7 @@ my-it-portfolio/
 └── README.md
 ```
 
-![alt text](images/image-3.png)
+![alt text](images/structure.png)
 
 The structure may evolve as the project develops.
 
@@ -106,6 +115,12 @@ The structure may evolve as the project develops.
 ## Project Status
 
 The project is being developed step by step as part of my HTML and CSS studies.
+
+## Validation & Testing Tools
+
+- [W3C Nu HTML Checker](https://validator.w3.org/nu/) — HTML validation.
+- [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) — accessibility, performance, best practices, and SEO audits.
+- Chrome DevTools — responsive layout and browser testing.
 
 ## Future Improvements
 
