@@ -79,6 +79,8 @@ The layout adapts to smaller screens so that the content remains readable and ea
 
 ```text
 my-it-portfolio/
+├── .github/
+├── .gitignore
 ├── index.html
 ├── style.css
 ├── images/
