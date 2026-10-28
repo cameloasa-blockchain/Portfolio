@@ -266,7 +266,38 @@ Consistent card layout and content alignment
 }
 
 /* ========================================
-13. Footer
+13. Contact details
+Contact information and links
+======================================== */
+
+.contact-details {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #E0E5EC;
+}
+
+.contact-details h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.contact-details a {
+    color: var(--blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.contact-details a:hover {
+    color: var(--dark);
+}
+
+.contact-details a:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 3px;
+}
+
+/* ========================================
+14. Footer
 Copyright and page ending
 ======================================== */
 
