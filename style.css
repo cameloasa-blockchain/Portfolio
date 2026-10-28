@@ -143,10 +143,9 @@ Reusable width and alignment
     outline-offset: 4px;
 }
 
-
 /* ========================================
-6. Main layout
-Desktop: two columns
+6. Main page layout
+Defines the page columns and content flow
 ======================================== */
 
 .page-layout {
@@ -165,18 +164,10 @@ Desktop: two columns
     min-width: 0;
 }
 
-
 /* ========================================
 7. Content sections
-Consistent card layout
+Shared styling for main and sidebar sections
 ======================================== */
-
-.main-content,
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
 
 .main-content section,
 .sidebar section {
@@ -184,7 +175,6 @@ Consistent card layout
     padding: 1.5rem;
     border-radius: 12px;
 }
-
 
 /* ========================================
 8. Hero layout
@@ -203,9 +193,41 @@ Text and profile picture
     justify-content: center;
 }
 
+/* ========================================
+9. Projects grid
+Defines the layout of project cards
+======================================== */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
 
 /* ========================================
-10. Responsive design
+10. Project cards
+Consistent card layout and content alignment
+======================================== */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid #E0E5EC;
+    border-radius: 12px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    margin-top: auto;
+}
+
+/* ========================================
+Responsive design
 ======================================== */
 
 /* Tablet and mobile */
@@ -228,6 +250,10 @@ Text and profile picture
     }
 
     .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .project-grid {
         grid-template-columns: minmax(0, 1fr);
     }
 }
