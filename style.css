@@ -220,10 +220,64 @@ Consistent card layout and content alignment
 
 .project-card h3 {
     margin-top: 0;
+    align-self: center;
 }
 
 .project-card a {
     margin-top: auto;
+}
+
+/* ========================================
+11. Skills grid
+Defines the layout of skill cards
+======================================== */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+/* ========================================
+12. Skill cards
+Consistent card layout and content alignment
+======================================== */
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--white);
+    border: 1px solid #E0E5EC;
+    border-radius: 12px;
+}
+
+.skill-card h3 {
+    margin-top: 0;
+    max-width: 100%;
+    text-align: center;
+    
+}
+
+.skill-card ul {
+    align-self: stretch;
+    text-align: left;
+}
+
+/* ========================================
+13. Footer
+Copyright and page ending
+======================================== */
+
+.footer {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0;
 }
 
 /* ========================================
@@ -254,6 +308,10 @@ Responsive design
     }
 
     .project-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .skills-grid {
         grid-template-columns: minmax(0, 1fr);
     }
 }
