@@ -70,6 +70,8 @@ The layout adapts to smaller screens so that the content remains readable and ea
 - CSS3
 - CSS Grid and Flexbox
 - Responsive design with media queries
+- Python 3
+- Pillow (Python Imaging Library) — image resizing and WebP conversion
 
 ## Planned Sections
 
@@ -121,6 +123,22 @@ The project is being developed step by step as part of my HTML and CSS studies.
 - [W3C Nu HTML Checker](https://validator.w3.org/nu/) — HTML validation.
 - [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) — accessibility, performance, best practices, and SEO audits.
 - Chrome DevTools — responsive layout and browser testing.
+
+### Image Optimization
+
+The profile image was resized and converted from PNG to WebP using Python and Pillow to reduce file size and improve page loading performance.
+
+**Example:**
+
+```python
+from PIL import Image
+
+with Image.open("profile-picture.png") as image:
+    image.thumbnail((800, 800), Image.Resampling.LANCZOS)
+    image.save("profile-picture.webp", "WEBP", quality=85, method=6)
+```
+
+The original image was approximately 12.5 MiB, while the optimized WebP image is only 49.4 KiB.
 
 ## Future Improvements
 
