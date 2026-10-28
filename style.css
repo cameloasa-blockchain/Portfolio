@@ -296,8 +296,90 @@ Contact information and links
     outline-offset: 3px;
 }
 
+
 /* ========================================
-14. Footer
+14. Contact form
+Form layout and field styling
+======================================== */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font: inherit;
+    color: var(--dark);
+    background-color: var(--white);
+    border: 1px solid #AAB5C4;
+    border-radius: 6px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input:focus-visible,
+.contact-form select:focus-visible,
+.contact-form textarea:focus-visible,
+.contact-form button:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+
+/* Checkbox layout */
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.65rem;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-top: 0.35rem;
+    accent-color: var(--blue);
+}
+
+.checkbox-group label {
+    font-weight: 400;
+}
+
+/* Submit button */
+
+.contact-form button {
+    align-self: flex-start;
+    padding: 0.75rem 1.25rem;
+    font: inherit;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--blue);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--dark);
+}
+
+/* ========================================
+15. Footer
 Copyright and page ending
 ======================================== */
 
