@@ -1,4 +1,3 @@
-
 /* ========================================
 1. Design tokens
 Reusable colors for the entire website
@@ -49,18 +48,7 @@ img {
 }
 
 /* ========================================
-3. Responsive foundation
-Prevent horizontal overflow on small screens
-======================================== */
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* ========================================
-Profile picture
+3.Profile picture
 ======================================== */
 
 .profile-picture {
@@ -295,7 +283,6 @@ Contact information and links
     outline: 2px solid var(--blue);
     outline-offset: 3px;
 }
-
 
 /* ========================================
 14. Contact form
