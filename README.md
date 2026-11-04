@@ -143,12 +143,11 @@ The original image was approximately 12.5 MiB, while the optimized WebP image is
 
 ## Future Improvements
 
-- Complete the responsive layout.
-- Add project cards and links to selected repositories.
-- Improve accessibility and form validation.
-- Test the website across desktop, tablet, and mobile screen sizes.
 - Validate the HTML and CSS.
 
----
+## Screenshot
 
+ Lighthouse ![alt text](image.png)
+
+ ---
 Created for learning, experimentation, and professional development.
