@@ -1,5 +1,18 @@
 /* ========================================
-1. Design tokens
+1. CSS Reset
+Reset default browser styles
+======================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+2. Design tokens
 Reusable colors for the entire website
 ======================================== */
 
@@ -12,16 +25,11 @@ Reusable colors for the entire website
 
 
 /* ========================================
-2. Global styles
+3. Global styles
 Base styles for the entire website
 ======================================== */
 
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
     color: var(--dark);
     background-color: var(--light);
@@ -29,6 +37,7 @@ body {
 }
 
 /* Typography */
+
 h1,
 h2,
 h3 {
@@ -36,19 +45,28 @@ h3 {
     line-height: 1.2;
 }
 
-p {
-    margin-top: 0;
-}
-
 /* Images */
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+/* Form elements */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
 /* ========================================
-3.Profile picture
+4.Profile picture
 ======================================== */
 
 .profile-picture {
@@ -61,7 +79,7 @@ img {
 }
 
 /* ========================================
-4. Layout container
+5. Layout container
 Reusable width and alignment
 ======================================== */
 
@@ -72,7 +90,7 @@ Reusable width and alignment
 }
 
 /* ========================================
-5. Header and navigation
+6. Header and navigation
 ======================================== */
 
 .header {
@@ -132,7 +150,7 @@ Reusable width and alignment
 }
 
 /* ========================================
-6. Main page layout
+7. Main page layout
 Defines the page columns and content flow
 ======================================== */
 
@@ -153,7 +171,7 @@ Defines the page columns and content flow
 }
 
 /* ========================================
-7. Content sections
+8. Content sections
 Shared styling for main and sidebar sections
 ======================================== */
 
@@ -165,7 +183,7 @@ Shared styling for main and sidebar sections
 }
 
 /* ========================================
-8. Hero layout
+9. Hero layout
 Text and profile picture
 ======================================== */
 
@@ -182,7 +200,7 @@ Text and profile picture
 }
 
 /* ========================================
-9. Projects grid
+10. Projects grid
 Defines the layout of project cards
 ======================================== */
 
@@ -193,7 +211,7 @@ Defines the layout of project cards
 }
 
 /* ========================================
-10. Project cards
+11. Project cards
 Consistent card layout and content alignment
 ======================================== */
 
@@ -216,7 +234,7 @@ Consistent card layout and content alignment
 }
 
 /* ========================================
-11. Skills grid
+12. Skills grid
 Defines the layout of skill cards
 ======================================== */
 
@@ -227,7 +245,7 @@ Defines the layout of skill cards
 }
 
 /* ========================================
-12. Skill cards
+13. Skill cards
 Consistent card layout and content alignment
 ======================================== */
 
@@ -254,7 +272,7 @@ Consistent card layout and content alignment
 }
 
 /* ========================================
-13. Contact details
+14. Contact details
 Contact information and links
 ======================================== */
 
@@ -285,7 +303,7 @@ Contact information and links
 }
 
 /* ========================================
-14. Contact form
+15. Contact form
 Form layout and field styling
 ======================================== */
 
@@ -366,7 +384,7 @@ Form layout and field styling
 }
 
 /* ========================================
-15. Footer
+16. Footer
 Copyright and page ending
 ======================================== */
 
@@ -381,7 +399,7 @@ Copyright and page ending
 }
 
 /* ========================================
-Responsive design
+17. Responsive design
 ======================================== */
 
 /* Tablet and mobile */
