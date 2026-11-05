@@ -149,5 +149,7 @@ The original image was approximately 12.5 MiB, while the optimized WebP image is
 
  Lighthouse ![alt text](image.png)
 
+ [https://validator.w3.org/]![alt text](image-1.png)
+
  ---
 Created for learning, experimentation, and professional development.
