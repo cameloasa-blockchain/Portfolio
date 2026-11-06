@@ -151,5 +151,13 @@ The original image was approximately 12.5 MiB, while the optimized WebP image is
 
  [https://validator.w3.org/]![alt text](image-1.png)
 
+ ### Image Loading Strategy
+
+The profile image in the Hero section does not use `loading="lazy"` because it is visible immediately when the page loads.
+
+As a prominent above-the-fold image, it should be loaded as early as possible. Applying lazy loading could delay its display and negatively affect the perceived loading performance. I added `fetchpriority="high"` because the profile image is the Largest Contentful Paint (LCP) element and should be prioritized by the browser to improve loading performance.
+
+For this reason, the browser's default image-loading behavior is intentionally preserved.
+
  ---
 Created for learning, experimentation, and professional development.
