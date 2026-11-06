@@ -70,15 +70,15 @@ The design features a consistent color palette, clear typography, and visual hie
 
 ### Website Structure
 
-![Screenshot showing the overall structure and organization of the portfolio website](images/screenshots/design-and-layout.png.png)
+![Screenshot showing the overall structure and organization of the portfolio website](images/screenshots/design-and-layout.png)
 
 ### Desktop View
 
-![Screenshot showing the portfolio website displayed on a desktop screen](images/screenshots/desktop-view.png.png)
+![Screenshot showing the portfolio website displayed on a desktop screen](images/screenshots/desktop-view.png)
 
 ### Mobile View
 
-![Screenshot showing the responsive portfolio layout on a mobile screen](images/screenshots/mobile-view.png.png)
+![Screenshot showing the responsive portfolio layout on a mobile screen](images/screenshots/mobile-view.png)
 
 ## Project Structure
 
