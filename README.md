@@ -159,5 +159,7 @@ As a prominent above-the-fold image, it should be loaded as early as possible. A
 
 For this reason, the browser's default image-loading behavior is intentionally preserved.
 
+The contact form is intentionally non-functional because the assignment focuses on practicing HTML form syntax and input elements, not on implementing form submission or backend functionality. Visitors can contact me directly via LinkedIn or email.
+
  ---
 Created for learning, experimentation, and professional development.
