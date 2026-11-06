@@ -1,46 +1,10 @@
-# Inlämningsuppgift
-Här är repot för din inlämningsuppgift.
-
-Om filerna:
-- `.gitignore` - Denna fil används för att ignorera/exkludera vissa systemfiler som inte behöver komma med i versionshanteringen. En sådan bör man alltid ha i sitt repo.
-
-- `index.html` - För att sidan ska kunna publiceras automatiskt på GitHub Pages är det viktigt att filen heter `index.html` med ett litet `i` i början.
-- I mappen `.github` finns ett script som automatiskt publicerar sidan till GitHub Pages.
-- I mappen `.github` finns även instruktioner för hur CoPilot ska ge feedback på koden.
-- Det går bra att redigera denna README-fil.
-
-## Todo:
-
-✅ Kravlista
-Här nedan ser du vad som ska finnas med i din portfolio. Sedan hur du implementerar det är upp till dig. Detta är minimikrav; det går jättebra att t.ex. ha fyra bilder.
-
-- En **bild med** tillhörande korrekta attribut inkl. alt-text, höjd, bredd, etc.
-- En **navigation/meny** (behöver ej gå att klicka på)
-- En **"huvudsektion"** med själva innehållet på sidan (dvs. <main>)
-- Tre **"projekt"**, dessa kan vara dummies/placeholders om du inte har någonting nu.
-- Ett **sidofält** med information [<aside>]
-- **Rubriker** på minst 3 nivåer (dvs [(<h1>), <h2>, <h3>)])
-- En **länk** till en extern webbplats
-- Sidan ska vara **responsive** dvs fungera på både mobil, tablet och desktop (dvs. ska skala "sömlöst" mellan de olika upplösningarna)
-- Ett **kontaktformulär** som innehåller "kontaktsökarens": namn, e-post, webbplats, telefonnummer, en dropdown, en checkbox och ett textfält för paragraftext (textarea) och en skicka-knapp
-- **Kontaktuppgifter** till dig
-- En **sidfot**
-
-## deployment
-
-```text
- - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          # The default branch is used to determine the publishing source
-          enablement: true
-```
-
-[(https://cameloasa.github.io/DreamyLines/)]
-[https://cameloasa.github.io/Recipe/]
-[https://cameloasa.github.io/IT-Portofolio/]
-
 # My IT Portfolio
+
+## Quick Links
+
+[View Live Project](https://cameloasa.github.io/DreamyLines/)
+[View Live Project](https://cameloasa.github.io/Recipe/)
+[View Live Project](https://cameloasa.github.io/IT-Portofolio/)
 
 ## About the Project
 
@@ -48,86 +12,157 @@ This is my personal IT portfolio, created as part of my HTML and CSS learning jo
 
 The goal is to build an accessible, well-structured website using semantic HTML and modern CSS.
 
-## Design Concept
+## Live Projects – Screenshots
 
-![alt text](/images/design.png)
+### DreamyLines
 
-The portfolio uses a two-column layout on desktop screens:
+A poetry website featuring original poetry and a piano audio experience.
 
-- **Main content:** Home, Projects, and Skills.
-- **Sidebar (`aside`):** About Me and Contact, including a contact form.
+![Screenshot of the DreamyLines poetry website showing its main page and visual design](images/screenshots/dreamylines-preview.png)
 
-The layout adapts to smaller screens so that the content remains readable and easy to navigate on desktops, tablets, and mobile devices.
+[View Live Project](https://cameloasa.github.io/DreamyLines/)
 
-### Color Palette
+### Recipe
 
-- Background: `#F5F7FA`
-- Primary blue: `#2457A7`
-- Dark text: `#14253D`
+A recipe website featuring a collection of recipes, categories, and pagination.
+
+![Screenshot of the Recipe website showing its recipe collection](images/screenshots/recipe-preview.png)
+
+[View Live Project](https://cameloasa.github.io/Recipe/)
+
+### IT Portfolio
+
+A personal portfolio showcasing web development projects and technical skills.
+
+![Screenshot of the IT Portfolio website showing its main layout](images/screenshots/it-portfolio-preview.png)
+
+[View Live Project](https://cameloasa.github.io/IT-Portofolio/)
+
+## Features
+
+- **Responsive Layout** – adapts to desktop, tablet, and mobile screen sizes.
+- **Two-Column Structure** – organizes the main content and sidebar into a clear layout.
+- **Semantic HTML5** – uses semantic elements to create a meaningful and accessible page structure.
+- **Navigation Menu** – provides links to the main sections of the portfolio.
+- **Projects Section** – presents selected projects with links to their live versions.
+- **Skills & Education Sections** – highlights technical skills and educational background.
+- **Contact Section** – provides contact information and an HTML form with various input types.
+- **Accessible Form Elements** – includes associated labels and native HTML form validation.
+- **Optimized Profile Image** – uses the WebP format to reduce image file size.
+- **Open Graph Metadata** – provides information for rich link previews when the portfolio is shared on social media.
 
 ## Technologies Used
 
-- HTML5
-- CSS3
-- CSS Grid and Flexbox
-- Responsive design with media queries
-- Python 3
-- Pillow (Python Imaging Library) — image resizing and WebP conversion
+- **HTML5** – semantic page structure and form elements.
+- **CSS3** – styling, layout, responsive design, and interactive states.
+- **CSS Flexbox & Grid** – layout techniques for arranging page content.
+- **CSS Media Queries** – responsive adjustments for different screen sizes.
+- **Python 3** – used for image processing and optimization.
+- **Pillow** – Python library used to resize and convert images to WebP.
+- **Git & GitHub** – version control and source code management.
+- **GitHub Pages** – hosting and deployment of the website.
 
-## Planned Sections
+## Design & Layout
 
-- **Home:** Introduction and portfolio overview.
-- **Projects:** Selected projects with descriptions, technologies, and repository links.
-- **Skills:** Technical skills and tools.
-- **About Me:** A short professional introduction and background.
-- **Contact:** Contact information and a form.
-- **Footer:** Copyright and relevant links.
+The portfolio uses a clean, responsive two-column layout on larger screens, with the main content area and a sidebar. On smaller screens, the layout adapts to provide a comfortable browsing experience across devices.
 
-## Learning Objectives
+The design features a consistent color palette, clear typography, and visual hierarchy to keep the content organized and easy to navigate.
 
-- Build a webpage using semantic HTML.
-- Create a clear and maintainable CSS structure.
-- Use CSS Grid and Flexbox for layout.
-- Implement responsive design for different screen sizes.
-- Follow accessibility and HTML validation best practices.
-- Organize code using reusable CSS rules and design variables.
+### Website Structure
+
+![Screenshot showing the overall structure and organization of the portfolio website](images/screenshots/design-and-layout.png.png)
+
+### Desktop View
+
+![Screenshot showing the portfolio website displayed on a desktop screen](images/screenshots/desktop-view.png.png)
+
+### Mobile View
+
+![Screenshot showing the responsive portfolio layout on a mobile screen](images/screenshots/mobile-view.png.png)
 
 ## Project Structure
 
+The project follows a simple and organized folder structure, separating the website's source files, images, and deployment configuration.
+
 ```text
-my-it-portfolio/
+project/
 ├── .github/
-├── .gitignore
+│   └── workflows/
+├── images/
+│   ├── camelia-ciuca.webp
+│   └── screenshots/
 ├── index.html
 ├── style.css
-├── images/
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
-![alt text](images/structure.png)
+### Main Files & Directories
 
-The structure may evolve as the project develops.
+- **`.github/workflows/`** – contains the GitHub Actions workflow used for deployment.
+- **`images/`** – stores the profile image and project screenshots.
+- **`index.html`** – contains the website's HTML structure and content.
+- **`style.css`** – contains the styling and responsive layout rules.
+- **`README.md`** – provides project documentation.
+- **`.gitignore`** – specifies files and directories that Git should ignore.
+
+### HTML Document Structure
+
+The HTML document is organized using semantic elements to create a clear and meaningful page structure.
+
+![Screenshot showing the semantic HTML structure of the portfolio document](images/screenshots/structure.png)
 
 ## Getting Started
 
-1. Clone or download this repository.
-2. Open the project folder in Visual Studio Code.
-3. Open `index.html` in a web browser.
-4. Use Chrome DevTools to inspect and test the layout at different screen sizes.
+### 1. Clone the Repository
 
-## Project Status
+Clone the repository to your local machine:
 
-The project is being developed step by step as part of my HTML and CSS studies.
+```bash
+git clone https://github.com/Medieinstitutet/bcu26d-bcu26d-html-inl-1-cameloasa.git
+```
 
-## Validation & Testing Tools
+### 2. Open the Project
 
-- [W3C Nu HTML Checker](https://validator.w3.org/nu/) — HTML validation.
-- [Google Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) — accessibility, performance, best practices, and SEO audits.
-- Chrome DevTools — responsive layout and browser testing.
+Navigate to the project directory:
 
-### Image Optimization
+```bash
+cd bcu26d-bcu26d-html-inl-1-cameloasa
+```
 
-The profile image was resized and converted from PNG to WebP using Python and Pillow to reduce file size and improve page loading performance.
+Open the folder in Visual Studio Code or your preferred code editor.
+
+### 3. Run the Website
+
+Open `index.html` in your web browser to view the website.
+
+You can also use the **Live Server** extension in Visual Studio Code for local development and automatic browser refresh when files are updated.
+
+## Testing & Validation
+
+### Chrome DevTools
+
+Chrome DevTools was used to inspect HTML and CSS, troubleshoot layout issues, and test the responsive design across different screen sizes.
+
+### Google Lighthouse
+
+Google Lighthouse was used to evaluate the website's performance, accessibility, best practices, and SEO.
+
+![Google Lighthouse audit results](images/screenshots/lighthouse.png)
+
+### W3C Nu HTML Checker
+
+The W3C Nu HTML Checker was used to validate the HTML markup and identify potential errors.
+
+![W3C Nu HTML Checker validation results](images/screenshots/html-validator.png)
+
+## Performance & Image Optimization
+
+### Image Optimization with Python & Pillow
+
+Python 3 and the Pillow library were used to resize and convert the profile image from PNG to WebP format.
+
+This reduced the image file size from approximately 12.5 MiB to 49.4 KiB, significantly reducing the amount of data required to load the image.
 
 **Example:**
 
@@ -139,27 +174,18 @@ with Image.open("profile-picture.png") as image:
     image.save("profile-picture.webp", "WEBP", quality=85, method=6)
 ```
 
-The original image was approximately 12.5 MiB, while the optimized WebP image is only 49.4 KiB.
-
-## Future Improvements
-
-- Validate the HTML and CSS.
-
-## Screenshot
-
- Lighthouse ![alt text](image.png)
-
- [https://validator.w3.org/]![alt text](image-1.png)
-
- ### Image Loading Strategy
+### Image Loading Strategy
 
 The profile image in the Hero section does not use `loading="lazy"` because it is visible immediately when the page loads.
 
-As a prominent above-the-fold image, it should be loaded as early as possible. Applying lazy loading could delay its display and negatively affect the perceived loading performance. I added `fetchpriority="high"` because the profile image is the Largest Contentful Paint (LCP) element and should be prioritized by the browser to improve loading performance.
+As a prominent above-the-fold image and the Largest Contentful Paint (LCP) element, it should be loaded as early as possible. The `fetchpriority="high"` attribute tells the browser to prioritize fetching this image, helping improve loading performance.
 
-For this reason, the browser's default image-loading behavior is intentionally preserved.
+For this reason, lazy loading is intentionally not applied to the profile image.
 
-The contact form is intentionally non-functional because the assignment focuses on practicing HTML form syntax and input elements, not on implementing form submission or backend functionality. Visitors can contact me directly via LinkedIn or email.
+## Implementation Notes
 
- ---
-Created for learning, experimentation, and professional development.
+### Contact Form
+
+The contact form is intentionally non-functional because the assignment focuses on practicing HTML form syntax and input elements, not on implementing form submission or backend functionality.
+
+---
