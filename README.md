@@ -45,7 +45,7 @@ A personal portfolio showcasing web development projects and technical skills.
 - **Semantic HTML5** – uses semantic elements to create a meaningful and accessible page structure.
 - **Navigation Menu** – provides links to the main sections of the portfolio.
 - **Projects Section** – presents selected projects with links to their live versions.
-- **Skills & Education Sections** – highlights technical skills and educational background.
+- **Skills Sectionn** – highlights the technical skills demonstrated in the portfolio.
 - **Contact Section** – provides contact information and an HTML form with various input types.
 - **Accessible Form Elements** – includes associated labels and native HTML form validation.
 - **Optimized Profile Image** – uses the WebP format to reduce image file size.
