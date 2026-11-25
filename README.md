@@ -119,7 +119,7 @@ The HTML document is organized using semantic elements to create a clear and mea
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/Medieinstitutet/bcu26d-bcu26d-html-inl-1-cameloasa.git
+git clone https://github.com/cameloasa-blockchain/Portfolio
 ```
 
 ### 2. Open the Project
@@ -127,7 +127,7 @@ git clone https://github.com/Medieinstitutet/bcu26d-bcu26d-html-inl-1-cameloasa.
 Navigate to the project directory:
 
 ```bash
-cd bcu26d-bcu26d-html-inl-1-cameloasa
+cd portfolio
 ```
 
 Open the folder in Visual Studio Code or your preferred code editor.
